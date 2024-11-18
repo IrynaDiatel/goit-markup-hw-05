@@ -3,9 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Web Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
      <!--header-->
     <header class="page-header">
       <div class="container header-container">
@@ -48,33 +61,44 @@
           </button>
         </div>
       </section>
-      <section class="form-container">
-      <form action="#" class="form" id="form"></form>
-      <h4 class="form-title">Leave your contacts and we will call you back</h4>
-      <div class="form-filed form-filed-name">
-        <label for="user-name" class="form-filed-label">Name</label>
-          <input type="text" id="user-name" class="form-input" required />
-      </div>
-      
-      <div class="form-filed form-filed-email">
-          <label for="user-email" class="form-filed-label">Phone</label>
-          <input type="email" id="user-email" class="form-input" required />
-     </div>
-     <div class="form-filed form-filed-email">
-          <label for="user-email" class="form-filed-label">Email</label>
-          <input type="email" id="user-email" class="form-input" required />
-     </div>
-     <div class="form-filed form-filed-email">
-          <label for="user-email" class="form-filed-label">Comment</label>
-          <input type="email" id="user-email" class="form-input" required />
-     </div>
 
-     <div>
-        <p class="">I accept the terms and conditions of the <span>Privacy Policy</span></p>
-     </div>
-     <button type="submit" class="form-btn" id="launch-btn">
-          Send
-    </button>
-    </section>
+      <!-- Leave your contacts and we will call you back -->
+      <section class="form-container">
+  <button class="close-btn">&times;</button>
+  <h4 class="form-title">Leave your contacts and we will call you back</h4>
+  <form action="#" class="form" id="form">
+    <!-- Name -->
+    <div class="form-field">
+      <label for="user-name" class="form-field-label">Name</label>
+      <input type="text" id="user-name" class="form-input" placeholder="Enter your name" required />
+    </div>
+    <!-- Phone -->
+    <div class="form-field">
+      <label for="user-phone" class="form-field-label">Phone</label>
+      <input type="tel" id="user-phone" class="form-input" placeholder="Enter your phone" required />
+    </div>
+    <!-- Email -->
+    <div class="form-field">
+      <label for="user-email" class="form-field-label">Email</label>
+      <input type="email" id="user-email" class="form-input" placeholder="Enter your email" required />
+    </div>
+    <!-- Comment -->
+    <div class="form-field">
+      <label for="user-comment" class="form-field-label">Comment</label>
+      <textarea id="user-comment" class="form-textarea" rows="4" placeholder="Enter your comment"></textarea>
+    </div>
+    <!-- Privacy Policy -->
+    <div class="form-checkbox">
+      <input type="checkbox" id="privacy-policy" required />
+      <label for="privacy-policy" class="text-form">
+        I accept the terms and conditions of the 
+        <a href="#" class="text-span">Privacy Policy</a>
+      </label>
+    </div>
+    <!-- Submit Button -->
+    <button type="submit" class="form-btn">Send</button>
+  </form>
+</section>
+
   </body>
 </html>
