@@ -531,12 +531,28 @@
           </ul>
         </div>
       </div>
+      <div class="subscribe-container">
+        <p class="subscribe">Subscribe</p>
+        <form action="#" class="form-subscribe" id="form"></form>
+        <label class="subscribe-label" for="input-name">Field Name</label>
+        <input
+          class="subscribe-input"
+          name="user-name"
+          id="input-name"
+          type="email"
+          placeholder="E-mail"
+        />
+        <svg class="subscribe-icon" width="24" height="24">
+          <use href="./images/Frame 3.svg"></use>
+        </svg>
+        <button class="subscribe-btn" type="submit">Subscribe</button>
+      </div>
     </footer>
 
     <!-- Leave your contacts and we will call you back -->
     <div class="form-container">
       <div class="form-modal">
-        <button class="close-btn">&times;</button>
+        <button class="close-btn" type="button">&times;</button>
         <h4 class="form-title">
           Leave your contacts and we will call you back
         </h4>
@@ -548,7 +564,7 @@
             <div class="input-wrapper">
               <input
                 class="form-input"
-                name="input-name"
+                name="user-name"
                 id="input-name"
                 type="text"
               />
@@ -563,7 +579,7 @@
             <div class="input-wrapper">
               <input
                 class="form-input"
-                name="input-name"
+                name="user-name"
                 id="input-name"
                 type="text"
               />
@@ -579,7 +595,7 @@
             <div class="input-wrapper">
               <input
                 class="form-input"
-                name="input-name"
+                name="user-name"
                 id="input-name"
                 type="text"
               />
@@ -593,10 +609,10 @@
           <div class="form-field">
             <label class="form-field-label" for="user-comment">Comment</label>
             <textarea
-              id="user-comment"
+              name="user-comment"
               class="form-textarea"
               rows="4"
-              placeholder="Enter your comment"
+              placeholder="Text input"
             ></textarea>
           </div>
           <!-- Privacy Policy -->
