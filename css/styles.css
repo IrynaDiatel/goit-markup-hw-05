@@ -775,7 +775,8 @@ button {
 }
 
 .footer-links {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .footer-subtitle {
@@ -838,6 +839,7 @@ button {
 .form-subscribe {
   gap: 24px;
   display: flex;
+  align-items: center;
 }
 
 .subscribe-input {
@@ -852,6 +854,7 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #ffffff;
+  margin-right: 24px;
 }
 
 .subscribe-btn {
