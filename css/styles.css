@@ -808,6 +808,7 @@ button {
 
 .form-subscribe {
   gap: 24px;
+  display: flex;
 }
 
 .subscribe-input {
