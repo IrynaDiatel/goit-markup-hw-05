@@ -63,7 +63,6 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  color: #4d5ae5;
 }
 
 .header-logo {
@@ -624,8 +623,7 @@ img {
   width: 100%;
   height: 100%;
   opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -662,12 +660,11 @@ img {
   top: 24px;
   right: 24px;
   background: none;
-  border: none;
+
   font-size: 24px;
   cursor: pointer;
   color: #2e2f42;
-  top: 24px;
-  right: 24px;
+
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -733,17 +730,12 @@ img {
 .form-input,
 .form-textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 4px;
-  outline: none;
-  font-size: 14px;
 }
 
 .form-input {
   border-radius: 4px;
-  width: 360px;
-  height: 336px;
+
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -757,9 +749,7 @@ img {
   fill: #4d5ae5;
 }
 
-input,
-textarea,
-button {
+input {
   font-family: inherit;
   line-height: inherit;
 }
@@ -798,14 +788,9 @@ button {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 12px;
 }
 
 .text-form {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
   display: block;
   margin-bottom: 4px;
 }
@@ -815,13 +800,14 @@ button {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: transparent;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .text-policy {
   font-weight: 500;
@@ -844,13 +830,12 @@ button {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
 }
 
 /* Submit Button */
