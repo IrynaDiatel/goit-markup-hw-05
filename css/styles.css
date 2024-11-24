@@ -719,15 +719,14 @@ img {
   margin-bottom: 8px;
 }
 
-.form-filed-label {
+/* .form-filed-label {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 8px;
-}
+} */
 
 .form-input {
   border-radius: 4px;
@@ -753,9 +752,7 @@ img {
   border: 1px solid #212121;
   max-width: 300px;
 }
-.person-focus:focus {
-  fill: #4d5ae5;
-}
+
 .form-input:focus,
 .form-textarea:focus {
   border-color: #4d5ae5;
@@ -777,6 +774,7 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   border-radius: 4px;
+  margin-bottom: 16px;
 }
 
 /* Privacy Policy */
@@ -853,7 +851,9 @@ img {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.form-icon:focus {
+  fill: #4d5ae5;
+}
 .form-label {
   font-size: 12px;
   line-height: 1.17;
