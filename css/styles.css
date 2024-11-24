@@ -768,8 +768,10 @@ img {
   align-items: center;
   justify-content: center;
 }
-.visually-hidden:checked .form-label .span-form .form-icon {
-  fill: var(--checked-icon-color, #f4f4fd); /* Змінна для кольору іконки */
+.span-form:checked {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 .form-textarea {
   resize: none;
@@ -811,7 +813,7 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   background-color: transparent;
-  display: inline-block;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
