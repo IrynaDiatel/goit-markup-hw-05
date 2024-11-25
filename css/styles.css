@@ -777,7 +777,9 @@ img {
 .form-textarea:focus {
   border: 1px solid #4d5ae5;
 }
-
+.div-bottom {
+  margin-bottom: 16px;
+}
 .form-label {
   font-size: 12px;
   line-height: 117%;
