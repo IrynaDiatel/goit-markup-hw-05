@@ -626,24 +626,12 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
   background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  width: 408px;
-  min-height: 584px;
-  background: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
 }
 
 .backdrop:not(.is-open) .modal {
@@ -656,8 +644,23 @@ img {
   pointer-events: auto;
 }
 
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 72px 24px 24px 24px;
+  border-radius: 4px;
+  width: 408px;
+  min-height: 584px;
+  transform: translate(-50%, -50%);
+  background-color: #fcfcfc;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .form-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .close-btn {
   position: absolute;
@@ -694,22 +697,18 @@ img {
 
 .input-wrapper {
   position: relative;
-  margin-bottom: 8px;
   display: flex;
-  align-items: center;
 }
 
 .form-title {
+  margin-bottom: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  line-height: 150%;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 16px;
-  width: 360px;
-  height: 24px;
-  line-height: 1.5;
 }
 
 .form {
@@ -725,15 +724,17 @@ img {
   fill: #4d5ae5;
 }
 .form-input {
-  border-radius: 4px;
-  width: 100%;
-  height: 40px;
   background-color: transparent;
-  padding-left: 38px;
-  outline: transparent;
-  border-color: #4d5ae5;
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 11px 38px;
+  outline: transparent;
+}
+.form-input:focus {
+  border: 1px solid #4d5ae5;
 }
 
 .input {
@@ -886,10 +887,12 @@ input:checked + label > span {
 }
 
 .form-label {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
   display: block;
   margin-bottom: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
 }
